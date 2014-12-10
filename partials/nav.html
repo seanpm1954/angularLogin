@@ -1,0 +1,11 @@
+<div class="table" ng-controller="LoginCtrl">
+  <ul>
+    <li class="branding"><a>Test</a></li>
+    <li><a ng-href="#/issues">Issues</a></li>
+    <li><a ng-href="#/users">Users</a></li>
+    <li></li>
+    <!--<li ng-hide="username"><a ng-href="#/login">Login</a></li>-->
+    <li ng-show="username"><a ng-click="logout()" ng-href="#">Logout:  ({{username}})</a></li>
+
+  </ul>
+</div>
