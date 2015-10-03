@@ -147,9 +147,9 @@ function deleteIssue($id) {
 
 function getConnection() {
 	$dbhost="127.0.0.1";
-	$dbuser="smaloney";
-	$dbpass="@sabasean";
-	$dbname="test";
+	$dbuser="";
+	$dbpass="";
+	$dbname="";
 	$dbh = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);	
 	$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	return $dbh;
